@@ -1,0 +1,48 @@
+************************************************
+Gia Vinh Lam             0925571
+CIS2520                  A4
+11/23/2016               glam01@mail.uoguelph.ca
+************************************************
+
+***********
+Compilation
+***********
+Assuming that you are in the main folder's directory in the terminal:
+make
+
+******************
+Running and Usage
+******************
+Assuming that you are in the main folder's directory in the terminal:
+./avltree A4_f16_data.txt
+(second part is the input file which serves as an argument for the program)
+
+************************
+How the Program(s) Works
+************************
+Program manages an AVL tree where the keys are strings and each string has an integer value associated with it representing it's frequency. User is able to initialize the tree from information stored in a text file and use various functions to manipulate/obtain properties from the tree. They may also choose to insert keys manually into the tree.
+
+************************************
+Sample Input and Output of Programs
+************************************
+Example output with same data file from moodle where user enters '5' as the first input:
+Welcome to the AVl tree program.
+This program was written by: Gia Vinh Lam (0925571)
+1. Initialization
+2. Find
+3. Insert
+4. Remove
+5. Check Height and Size
+6. Find All (above a given frequency)
+7. Exit
+avl/> 5
+height : 0, size: 0 
+
+*********************************
+Known Limitations or Assumptions
+*********************************
+Keys start with letters and end with numbers.
+Lots of the char arrays that take in inputs have an index size of 200 which means if the user exceeds this limit, program may not work as intended.
+If the data file is formatted incorrectly (ex. keys end in letters), program may not work as intended.
+The height of a tree with a single node (ex. leaf node) is 1. An empty tree has a height of 0.
+Entering an input that isn't a positive integer (all digits) for frequency (option 6) may cause program to work oddly/not as intended.
